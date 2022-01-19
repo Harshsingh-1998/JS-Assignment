@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        function CalculateArea() {
+            var side = document.getElementById("side").value;
+            var output = side * side;
+            document.getElementById("output").innerHTML ="Area of Square whose side is "+side+" = " + output;
+        }
+    </script>
+</head>
+
+<body style="text-align: center;">
+    <h1>This is Fifth Assignment.</h1>
+    <p id="output"></p>
+    <label>Enter side length: </label>
+    <input id="side">
+    <p><button onclick="CalculateArea()" id="calculate">Calculate Area</button></p>
+</body>
+
+</html>

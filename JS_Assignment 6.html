@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        function CalculateArea() {
+            var length = document.getElementById("length").value;
+            var breadth = document.getElementById("breadth").value;
+            var output = length * breadth;
+            document.getElementById("output").innerHTML ="Area of Rectangle is = " +output;
+        }
+    </script>
+</head>
+
+<body style="text-align: center;">
+    <h1>This is Sixth Assignment.</h1>
+    <label>Enter length: </label>
+    <input id="length">
+    <label>Enter breadth: </label>
+    <input id="breadth">
+    <p><button onclick="CalculateArea()" id="calculate">Calculate Area</button></p>
+    <p id="output"></p>
+</body>
+
+</html>
